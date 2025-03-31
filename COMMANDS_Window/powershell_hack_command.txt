@@ -1,0 +1,7 @@
+#VER LOS PERMISOS DE UNA CARPETA
+icacls "c:\path\to\folder"
+
+
+#CREAR USUARIOS NUEVOS 
+net user name password /add
+net localgroup Administrators name_user /add
