@@ -1,0 +1,27 @@
+[WE MOST TO BE INTO THE FOLDER OF RIPER THAN LAUNCH THE CMD AND
+THE FOLLOWS COMMAND BELOW :]
+
+
+rip.exe -r "C:\File\wehave\to\SYSTEM" -p timezone
+[Extract up the time zone]
+
+rip.exe -r "C:\File\wehave\to\SYSTEM" -p shutdown
+[Extract up the last time that the system was shutdown]
+
+rip.exe -r "C:\File\wehave\to\SYSTEM" -p processor_architecture
+[Extract up the arquitecture from the system ]
+
+rip.exe -r "C:\File\wehave\to\SYSTEM" -p compname
+[Extract up the name of the computer ]
+
+rip.exe -r "C:\File\wehave\to\software" -p winver
+[Extract up the version of windows ]
+
+rip.exe -r "C:\File\wehave\to\NTUSER.DAT" -p recentdocs
+[Extract up the file thas was launched ]
+
+rip.exe -r "D:\Program Files\LAB\NTUSER.DAT" -p typedurls
+[Extract up the last url opened]+
+
+
+
