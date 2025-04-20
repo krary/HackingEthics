@@ -12,3 +12,15 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 #SABER QUE USUARIOS ESTAN CONECTADOS A NUESTRA RED
 netstat -an | findstr ESTABLISHED
+
+#PARA ACTIVAR EL RECURSO COMPARTIDO DE WINDOW TENEMOS :
+net share Multimedia=D:\ /grant:everyone,full
+
+#PARA TERMINAR TODOS LOS RECURSOS COMPARTIDOS TENEMOS 
+net session /delete
+net share NOMBRE_SESSION /delete
+
+#PARA SABER QUE SESION TENEMOS ABIERTA CON SU NOMBRE TENEMOS:
+net share
+
+
