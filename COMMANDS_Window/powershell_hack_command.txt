@@ -18,7 +18,7 @@ net share Multimedia=D:\ /grant:everyone,full
 
 #PARA TERMINAR TODOS LOS RECURSOS COMPARTIDOS TENEMOS 
 net session /delete
-net share NOMBRE_SESSION /delete
+net share NOMBRE_SESSION   /delete
 
 #PARA SABER QUE SESION TENEMOS ABIERTA CON SU NOMBRE TENEMOS:
 net share
