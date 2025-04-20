@@ -9,3 +9,6 @@ net localgroup Administrators name_user /add
 #EJECUTAR ARCHIVOS DE EXTENSION .ps1 EN POWERSHELL
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 [luego ejecutamos el archivo con: .\name_file.ps1]
+
+#SABER QUE USUARIOS ESTAN CONECTADOS A NUESTRA RED
+netstat -an | findstr ESTABLISHED
