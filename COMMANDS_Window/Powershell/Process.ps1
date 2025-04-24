@@ -21,4 +21,24 @@ function pro(){
        }
     }
 }
-pro
+function objeto(){
+    $pro = [System.Diagnostics.Process]::GetProcesses()
+    $pro | Where-Object{$_.MainModule -and $_.MainWindowTitle -like "*notepad*"}
+}
+function Notas(){
+    $note = [System.Diagnostics.Process]::new()
+    $note.StartInfo.FileName = "notepad.exe"
+    $note.StartInfo.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
+    $note.Start()
+}
+function investigate(){
+    $variable = [System.Diagnostics.Process]::GetProcesses()
+    foreach($x in $variable){
+        $l = $x.MainWindowHandle
+        if($l -eq 0){
+            Write-Host "Proceso encontrado: $($x.ProcessName) File $($x.MainModule.FileName)"
+        }
+    }
+
+}
+investigate
